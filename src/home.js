@@ -5,19 +5,22 @@ export default function loadHome() {
   content.innerHTML = "";
 
   // Create elements
-  const image = document.createElement("img");
+  const logo = document.createElement("img");
   const headline = document.createElement("h1");
   const description = document.createElement("p");
 
   // Set attributes and content
-  image.src = "https://picsum.photos/200";
-  image.alt = "Restaurant Image";
+  logo.src = require("./assets/logo.jpg");
+  logo.alt = "Restaurant Logo";
+  logo.classList.add("home-logo");
   headline.textContent = "Welcome to Hook & Cook!";
+  headline.classList.add("home-headline");
   description.textContent =
     "Arrr, we be servin' the tastiest grub this side o' the seven seas! Drop anchor and feast like a true buccaneer—yer belly’ll thank ye!";
+  description.classList.add("home-description");
 
   // Append elements to the content div
-  content.appendChild(image);
+  content.appendChild(logo);
   content.appendChild(headline);
   content.appendChild(description);
 }
