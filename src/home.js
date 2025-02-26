@@ -13,7 +13,7 @@ export default function loadHome() {
   logo.src = require("./assets/logo.jpg");
   logo.alt = "Restaurant Logo";
   logo.classList.add("home-logo");
-  headline.textContent = "Welcome to Hook & Cook!";
+  headline.textContent = "Welcome Aboard!";
   headline.classList.add("home-headline");
   description.textContent =
     "Arrr, we be servin' the tastiest grub this side o' the seven seas! Drop anchor and feast like a true buccaneer—yer belly’ll thank ye!";
