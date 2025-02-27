@@ -172,26 +172,26 @@ nav button.active {
   background-color: #14121b;
   border: 2px solid #e8b920;
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.25rem;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
 }
 
 .contact-item {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   align-items: center;
 }
 
 .contact-icon {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 1.2;
-  padding: 0.5rem;
+  padding: 0.4rem;
   background-color: #e8b920;
   border-radius: 50%;
-  box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.6);
 }
 
 .contact-title {
@@ -203,7 +203,7 @@ nav button.active {
 
 .contact-content {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   opacity: 0.9;
   line-height: 1.4;
 }
