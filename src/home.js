@@ -14,10 +14,10 @@ export default function loadHome() {
   logo.alt = "Restaurant Logo";
   logo.classList.add("home-logo");
   headline.textContent = "Welcome Aboard!";
-  headline.classList.add("home-headline");
+  headline.classList.add("headline");
   description.textContent =
     "Arrr, we be servin' the tastiest grub this side o' the seven seas! Drop anchor and feast like a true buccaneer—yer belly’ll thank ye!";
-  description.classList.add("home-description");
+  description.classList.add("description");
 
   // Append elements to the content div
   content.appendChild(logo);
