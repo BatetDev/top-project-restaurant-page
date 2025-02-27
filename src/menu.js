@@ -47,7 +47,7 @@ export default function loadMenu() {
     },
     // MAIN COURSE
     {
-      title: "Main Course: Swashbucklin’ Feasts",
+      title: "Main Course: Corsair’s Feasts",
       items: [
         {
           name: "Captain’s Catch of the Day",
@@ -156,7 +156,7 @@ export default function loadMenu() {
           price: "$10",
         },
         {
-          name: "Fresh Sailor Lemonade",
+          name: "Seafarer’s Lemonade",
           description: "Refreshing lemonade with a splash of mint and berries.",
           price: "$6",
         },
