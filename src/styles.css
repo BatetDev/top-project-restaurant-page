@@ -1,12 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto:wght@400;700&display=swap");
+:root {
+  /* Colors */
+  --primary-bg: #14121b;
+  --accent-color: #e8b920;
+  --text-color: #fff;
+
+  /* Shadows */
+  --box-shadow-small: 0px 6px 8px rgba(0, 0, 0, 0.3),
+    0px 0px 8px 4px rgba(255, 215, 0, 0.4);
+  --box-shadow-medium: 0px 6px 12px rgba(0, 0, 0, 0.6);
+  --box-shadow-large: 0px 10px 20px rgba(0, 0, 0, 0.6);
+
+  /* Borders */
+  --border-style: 2px solid var(--accent-color);
+  --border-radius: 1rem;
+
+  /* Typography */
+  --headline-font: "Pirata One", cursive;
+  --body-font: "Roboto", sans-serif;
+  --letter-spacing: 1px;
+
+  /* Other */
+  --transition-speed: 300ms all ease-in-out;
+}
 
 /* General Styles */
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto:wght@400;700&display=swap");
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--body-font);
   margin: 0;
   padding: 0;
-  background-color: #14121b;
-  color: #fff;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%23e8b920' fill-opacity='0.4' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
   overflow-x: hidden;
 }
@@ -15,13 +40,13 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Pirata One", cursive;
+  font-family: var(--headline-font);
 }
 
 nav {
   width: 100%;
-  background-color: #14121b;
-  border-bottom: 2px solid #e8b920;
+  background-color: var(--primary-bg);
+  border-bottom: var(--border-style);
   padding: 1rem 0 0;
   display: flex;
   justify-content: center;
@@ -30,9 +55,9 @@ nav {
 
 nav button {
   padding: 0.4rem 0.7rem;
-  background-color: #14121b;
-  color: #e8b920;
-  border: 2px solid #e8b920;
+  background-color: var(--primary-bg);
+  color: var(--accent-color);
+  border: var(--border-style);
   border-bottom: none;
   position: relative;
   bottom: -2px;
@@ -41,23 +66,23 @@ nav button {
   text-align: center;
   font-weight: bold;
   font-size: 0.95rem;
-  letter-spacing: 1px;
+  letter-spacing: var(--letter-spacing);
   cursor: pointer;
   min-width: 110px;
-  transition: 300ms all ease-in-out;
+  transition: var(--transition-speed);
 }
 
 nav button:hover {
   border-bottom: none;
-  color: #14121b;
-  background-color: #e8b920;
+  color: var(--primary-bg);
+  background-color: var(--accent-color);
 }
 
 nav button.active {
-  background-color: #e8b920;
-  color: #14121b;
-  border: 2px solid #e8b920;
-  border-bottom: 2px solid #e8b920;
+  background-color: var(--accent-color);
+  color: var(--primary-bg);
+  border: var(--border-style);
+  border-bottom: 2px solid var(--accent-color);
   z-index: 1;
 }
 
@@ -72,17 +97,16 @@ nav button.active {
 
 .home-logo {
   width: min(66vw, 500px);
-  border: 3px solid #e8b920;
+  border: 3px solid var(--accent-color);
   border-radius: 2.5rem;
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3),
-    0px 0px 8px 4px rgba(255, 215, 0, 0.4);
+  box-shadow: var(--box-shadow-small);
 }
 
 .headline {
   font-size: 3rem;
   margin: 1rem;
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: var(--letter-spacing);
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
 }
 
@@ -91,14 +115,14 @@ nav button.active {
   font-style: italic;
   font-weight: 600;
   line-height: 1.6;
-  background-color: #14121b;
-  border: 2px solid #e8b920;
-  border-radius: 1rem;
+  background-color: var(--primary-bg);
+  border: var(--border-style);
+  border-radius: var(--border-radius);
   padding: 1.25rem 0.75rem;
   width: min(80vw, 500px);
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: var(--box-shadow-medium);
 }
 
 /* MENU PAGE */
@@ -108,18 +132,18 @@ nav button.active {
 }
 
 .menu-section {
-  background-color: #14121b;
-  border: 2px solid #e8b920;
-  border-radius: 1rem;
+  background-color: var(--primary-bg);
+  border: var(--border-style);
+  border-radius: var(--border-radius);
   padding: 1.5rem;
   margin-bottom: 2rem;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: var(--box-shadow-medium);
 }
 
 .menu-section-title {
-  color: #e8b920;
+  color: var(--accent-color);
   font-size: 2rem;
-  letter-spacing: 1px;
+  letter-spacing: var(--letter-spacing);
   margin: 1.25rem 0;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
@@ -144,22 +168,22 @@ nav button.active {
 }
 
 .menu-item-name {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--body-font);
   font-size: 1.2rem;
   letter-spacing: 0.5px;
-  color: #e8b920;
+  color: var(--accent-color);
   margin: 0;
 }
 
 .menu-item-price {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--body-font);
   font-size: 1.275rem;
   font-weight: 600;
-  color: #e8b920;
+  color: var(--accent-color);
 }
 
 .menu-item-description {
-  color: #fff;
+  color: var(--text-color);
   font-size: 0.95rem;
   margin: 0;
   opacity: 0.9;
@@ -172,14 +196,14 @@ nav button.active {
 }
 
 .contact-list {
-  background-color: #14121b;
-  border: 2px solid #e8b920;
-  border-radius: 1rem;
+  background-color: var(--primary-bg);
+  border: var(--border-style);
+  border-radius: var(--border-radius);
   padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: var(--box-shadow-medium);
 }
 
 .contact-item {
@@ -192,16 +216,16 @@ nav button.active {
   font-size: 1.5rem;
   line-height: 1.2;
   padding: 0.4rem;
-  background-color: #e8b920;
+  background-color: var(--accent-color);
   border-radius: 50%;
   box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.6);
 }
 
 .contact-title {
-  color: #e8b920;
+  color: var(--accent-color);
   font-size: 1.6rem;
   margin: 0 0 0.5rem;
-  letter-spacing: 1px;
+  letter-spacing: var(--letter-spacing);
 }
 
 .contact-content {
