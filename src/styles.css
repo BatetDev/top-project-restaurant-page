@@ -113,3 +113,10 @@ nav button.active {
   margin-bottom: 2rem;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
 }
+
+.menu-section-title {
+  color: #e8b920;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
