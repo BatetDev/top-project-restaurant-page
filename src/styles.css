@@ -142,16 +142,17 @@ nav button.active {
 }
 
 .menu-item-name {
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: #e8b920;
   margin: 0;
 }
 
 .menu-item-price {
-  font-family: "Pirata One", cursive;
-  font-size: 1.35rem;
-  letter-spacing: 0.5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
   color: #e8b920;
 }
 
