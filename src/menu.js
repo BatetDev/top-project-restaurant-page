@@ -31,6 +31,17 @@ export default function loadMenu() {
             "Golden-fried calamari rings with a spicy arrr-omatic dipping sauce.",
           price: "$10",
         },
+        {
+          name: "Chest of Clams Chowder",
+          description: "Creamy clam chowder served in a sourdough bread bowl.",
+          price: "$9",
+        },
+        {
+          name: "Pirate’s Pickle Platter",
+          description:
+            "A hearty mix of pickled vegetables, olives, and smoked fish.",
+          price: "$12",
+        },
       ],
     },
   ];
