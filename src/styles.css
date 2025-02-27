@@ -98,7 +98,7 @@ nav button.active {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
 }
 
-/* MENU */
+/* MENU PAGE */
 .menu-container {
   width: min(90vw, 800px);
   margin: 0 auto;
@@ -160,4 +160,46 @@ nav button.active {
   font-size: 0.95rem;
   margin: 0;
   opacity: 0.9;
+}
+
+/* CONTACT PAGE */
+.contact-container {
+  width: min(90vw, 600px);
+  margin: 0 auto;
+}
+
+.contact-list {
+  background-color: #14121b;
+  border: 2px solid #e8b920;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.contact-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.contact-icon {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.contact-title {
+  color: #e8b920;
+  font-size: 1.6rem;
+  margin: 0 0 0.5rem;
+  letter-spacing: 1px;
+}
+
+.contact-content {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+  line-height: 1.4;
 }

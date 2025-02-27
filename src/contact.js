@@ -51,7 +51,7 @@ export default function loadContact() {
 
 function createContactItem({ icon, title, content }) {
   const item = document.createElement("div");
-  item.classList.add("contact.item");
+  item.classList.add("contact-item");
 
   const iconSpan = document.createElement("span");
   iconSpan.textContent = icon;
