@@ -10,7 +10,9 @@ export default function loadContact() {
 
   // Set content
   headline.textContent = "Contact";
+  headline.classList.add("headline");
   description.textContent = "Here should go the Contact content";
+  description.classList.add("description");
 
   // Append elements to the content div
   content.appendChild(headline);
