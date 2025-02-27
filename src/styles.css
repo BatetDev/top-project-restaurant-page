@@ -88,10 +88,13 @@ nav button.active {
 
 .description {
   font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.6;
   background-color: #14121b;
   border: 2px solid #e8b920;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 1.25rem 0.75rem;
   width: min(80vw, 500px);
   margin: 0 auto;
   text-align: center;
