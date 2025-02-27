@@ -117,6 +117,47 @@ nav button.active {
 .menu-section-title {
   color: #e8b920;
   font-size: 2rem;
+  letter-spacing: 1px;
   margin-bottom: 1.5rem;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.menu-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(232, 185, 32, 0.3);
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.menu-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.menu-item-name {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #e8b920;
+  margin: 0;
+}
+
+.menu-item-price {
+  font-family: "Pirata One", cursive;
+  font-size: 1.35rem;
+  letter-spacing: 0.5px;
+  color: #e8b920;
+}
+
+.menu-item-description {
+  color: #fff;
+  font-size: 0.95rem;
+  margin: 0;
+  opacity: 0.9;
 }

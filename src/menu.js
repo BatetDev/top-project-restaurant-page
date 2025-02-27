@@ -66,7 +66,7 @@ function createMenuItem(item) {
   itemElement.classList.add("menu-item");
 
   const itemHeader = document.createElement("div");
-  itemHeader.classList.add("menu-item-loader");
+  itemHeader.classList.add("menu-item-header");
 
   const name = document.createElement("h3");
   name.textContent = item.name;
