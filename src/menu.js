@@ -10,7 +10,9 @@ export default function loadMenu() {
 
   // Set content
   headline.textContent = "Menu";
+  headline.classList.add("headline");
   description.textContent = "Here should go the menu cards or similar";
+  description.classList.add("description");
 
   // Append elements to the content div
   content.appendChild(headline);
