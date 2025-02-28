@@ -250,4 +250,21 @@ nav button.active {
     font-size: 1.1rem;
     min-width: 125px;
   }
+
+  #content {
+    padding: 4rem 0;
+    gap: 1.5rem;
+  }
+
+  .headline {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    padding: 1.25rem 0.3rem;
+    width: min(66vw, 500px);
+  }
 }
