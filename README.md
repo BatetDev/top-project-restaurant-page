@@ -55,7 +55,7 @@ A simple restaurant page created as part of The Odin Project's JavaScript course
 
 ```bash
 # Clone the repository
-git clone https://github.com/BatetDev/top-project-restaurant-page/tree/main
+git clone https://github.com/BatetDev/top-project-restaurant-page.git
 
 # Navigate to project directory
 cd top-project-restaurant-page
@@ -67,7 +67,7 @@ npm install
 npm run dev
 
 # Build for production
-npm run build
+npm run start
 ```
 
 ## Credits
