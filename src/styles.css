@@ -238,6 +238,7 @@ nav button.active {
 /* MEDIA QUERIES */
 
 @media (min-width: 576px) {
+  /* HOME PAGE */
   nav {
     padding: 1.5rem 0 0;
     gap: 1.5rem;
@@ -266,5 +267,39 @@ nav button.active {
     line-height: 1.6;
     padding: 1.25rem 0.3rem;
     width: min(66vw, 500px);
+  }
+
+  /* MENU PAGE */
+  .menu-container {
+    width: min(85vw, 800px);
+  }
+
+  .menu-section {
+    padding: 1.75rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .menu-section-title {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .menu-item {
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.1rem;
+  }
+
+  .menu-item-name {
+    font-size: 1.3rem;
+  }
+
+  .menu-item-price {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .menu-item-description {
+    font-size: 1rem;
+    opacity: 0.9;
   }
 }
