@@ -234,3 +234,20 @@ nav button.active {
   opacity: 0.9;
   line-height: 1.4;
 }
+
+/* MEDIA QUERIES */
+
+@media (min-width: 576px) {
+  nav {
+    padding: 1.5rem 0 0;
+    gap: 1.5rem;
+  }
+
+  nav button {
+    padding: 0.75rem 0.75rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+    line-height: 1;
+    font-size: 1.1rem;
+    min-width: 125px;
+  }
+}
