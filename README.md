@@ -64,10 +64,10 @@ cd top-project-restaurant-page
 npm install
 
 # Run development server
-npm run dev
+npm run start
 
 # Build for production
-npm run start
+npm run build
 ```
 
 ## Credits
