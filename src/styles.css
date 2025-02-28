@@ -302,4 +302,33 @@ nav button.active {
     font-size: 1rem;
     opacity: 0.9;
   }
+
+  /* CONTACT PAGE */
+  .contact-container {
+    width: min(85vw, 800px);
+    margin: 0 auto;
+  }
+
+  .contact-list {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .contact-item {
+    gap: 1.25rem;
+  }
+
+  .contact-icon {
+    font-size: 1.6rem;
+    padding: 0.6rem;
+  }
+
+  .contact-title {
+    font-size: 1.7rem;
+  }
+
+  .contact-content {
+    font-size: 1rem;
+  }
 }
