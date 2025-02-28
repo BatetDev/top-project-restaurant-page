@@ -61,3 +61,8 @@ npm run dev
 # Build for production
 npm run build
 ```
+
+## Credits
+
+- Background pattern: [Hero Patterns](https://heropatterns.com/) - Anchors SVG Pattern
+- Restaurant Logo: Generated with [Leonardo.AI](https://leonardo.ai/) using Flux model
